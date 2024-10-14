@@ -1,0 +1,2 @@
+for the t5 models, visit:
+https://huggingface.co/spaces/MrYeti/q-tips-api/tree/main/app
