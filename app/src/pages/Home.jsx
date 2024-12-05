@@ -17,9 +17,8 @@ const Home = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-full lg:w-[50%] sm:w-[70%] w-full mx-auto py-[8rem]">
-            {/* Main blurry section */}
-            <div className="w-full h-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 relative overflow-hidden">
+        <div className="flex flex-col items-center justify-center h-full lg:w-[50%] sm:w-[70%] mx-auto py-[8rem]">
+            <div className="w-full h-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
                 <h1 className="text-3xl font-semibold text-center text-[#646EE4] mb-6">
                     Q-tips
                     <span className="text-gray-300 ml-4">
@@ -28,9 +27,8 @@ const Home = () => {
                 </h1>
 
                 <form onSubmit={handleSubmit}>
-                    {/* Context Input */}
                     <div>
-                        <label className="label p-2">
+                        <label className="label p-2 ">
                             <span className="label-text text-lg font-semibold text-gray-400">
                                 Context
                             </span>
@@ -43,7 +41,6 @@ const Home = () => {
                         ></textarea>
                     </div>
 
-                    {/* Answer Input */}
                     <div>
                         <label className="label p-2 mt-4">
                             <span className="text-lg label-text font-semibold text-gray-400">
@@ -59,7 +56,6 @@ const Home = () => {
                         />
                     </div>
 
-                    {/* Submit Button */}
                     <div className="flex items-center justify-center">
                         <button className="btn btn-active btn-primary my-6 text-base py-2 min-w-[128px]">
                             {loading ? (
@@ -71,15 +67,14 @@ const Home = () => {
                     </div>
                 </form>
 
-                {/* Question Section */}
                 {question && (
-                    <div className="mt-4">
+                    <div>
                         <label className="label p-2">
                             <span className="text-lg label-text font-semibold text-gray-400">
                                 Question
                             </span>
                         </label>
-                        <div className="w-full input input-bordered h-auto text-lg border-gray-600 bg-[#1D232A] py-4 px-3 text-gray-300 break-words">
+                        <div className="w-full input input-bordered h-auto text-lg border-gray-600 bg-[#1D232A] py-4 px-3 text-gray-300">
                             {question}
                         </div>
                     </div>
