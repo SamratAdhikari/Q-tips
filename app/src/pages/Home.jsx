@@ -67,19 +67,17 @@ const Home = () => {
                     </div>
                 </form>
 
-                {question ? (
+                {question && (
                     <div>
                         <label className="label p-2">
                             <span className="text-lg label-text font-semibold text-gray-400">
                                 Question
                             </span>
                         </label>
-                        <label className="w-full input input-bordered h-10 text-lg border-gray-600 bg-[#1D232A] py-4 text-gray-300 flex items-center">
+                        <div className="w-full input input-bordered h-auto text-lg border-gray-600 bg-[#1D232A] py-4 px-3 text-gray-300">
                             {question}
-                        </label>
+                        </div>
                     </div>
-                ) : (
-                    ""
                 )}
             </div>
         </div>
