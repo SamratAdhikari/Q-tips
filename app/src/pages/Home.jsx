@@ -17,7 +17,7 @@ const Home = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-full lg:w-[50%] sm:w-[70%] mx-auto py-[8rem]">
+        <div className="flex flex-col items-center justify-center h-full lg:w-[50%] sm:w-[70%] w-full mx-auto py-[8rem]">
             <div className="w-full h-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
                 <h1 className="text-3xl font-semibold text-center text-[#646EE4] mb-6">
                     Q-tips
@@ -68,13 +68,13 @@ const Home = () => {
                 </form>
 
                 {question && (
-                    <div>
+                    <div className="mt-4">
                         <label className="label p-2">
                             <span className="text-lg label-text font-semibold text-gray-400">
                                 Question
                             </span>
                         </label>
-                        <div className="w-full input input-bordered h-auto text-lg border-gray-600 bg-[#1D232A] py-4 px-3 text-gray-300">
+                        <div className="w-full input input-bordered h-auto text-lg border-gray-600 bg-[#1D232A] py-4 px-3 text-gray-300 break-words">
                             {question}
                         </div>
                     </div>
