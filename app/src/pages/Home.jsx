@@ -17,8 +17,8 @@ const Home = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-full lg:w-[50%] sm:w-[70%] mx-auto my-10">
-            <div className="w-full h-[70%] p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
+        <div className="flex flex-col items-center justify-center h-full lg:w-[50%] sm:w-[70%] mx-auto py-[8rem]">
+            <div className="w-full h-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0">
                 <h1 className="text-3xl font-semibold text-center text-[#646EE4] mb-6">
                     Q-tips
                     <span className="text-gray-300 ml-4">
